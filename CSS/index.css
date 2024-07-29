@@ -1,0 +1,220 @@
+/* .mycss{
+    color: red;
+    font-size: 53px;
+    text-decoration: underline;
+} */
+* {
+  background-color: rgb(218, 211, 211);
+  margin: 0%;
+  padding: 0%;
+}
+
+.body {
+  background-color: rgb(218, 211, 211);
+  --bs-body-bg: rgb(218, 211, 211);
+  border: none;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  padding-top: 4px;
+}
+
+.logo-text {
+  height: 40px;
+  width: 50px;
+  font-size: medium;
+  font-weight: bold;
+  margin-left: 3px;
+}
+
+.header {
+  padding-top: 50px;
+  padding-left: 5.5%;
+  padding-right: 5.5%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.search {
+  height: 37px;
+  width: 40px;
+  border-radius: 40%;
+  background-color: white;
+  padding: 10px;
+}
+
+.left-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.right-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: small;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h1 {
+  color: black;
+}
+
+header {
+  color: white;
+
+}
+
+#main-body {
+  background-color: rgb(250, 246, 246);
+
+}
+
+#adduser {
+  background-color: #82a70c;
+  color: white;
+  margin-left: 10px;
+  border: 0cm;
+  padding: 10px 25px 10px 25px;
+  border-radius: 5%;
+}
+
+.profile-table {
+  height: 6%;
+  width: 6%;
+  margin-right: 10px;
+  border: none;
+  border-radius: 50%;
+}
+
+th {
+  background-color: #42515f;
+  color: rgb(250, 246, 246);
+  ;
+  flex-direction: column;
+  padding: 15px;
+}
+
+td {
+  border-bottom: 1px rgb(250, 246, 246);
+  padding: 10px;
+  border: rgb(250, 246, 246);
+  background-color: white;
+}
+
+tr {
+  text-align: center;
+  padding: 10px;
+  margin: 50px;
+  border-bottom: 2pt solid rgb(250, 246, 246);
+}
+
+span {
+  background-color: #e9fea5;
+  border-radius: 10px;
+  padding-left: 2%;
+  padding-right: 2%;
+
+}
+
+#employeetable {
+  padding: 1px 70px 50px 70px;
+  border: rgb(250, 246, 246);
+
+}
+
+#mainbodyheader {
+  padding: 10px 70px 10px 70px;
+  display: flex;
+  color: #42515f;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#deletebtn,
+#deletebtn img {
+  background-color: white;
+  border: none;
+  margin-right: 6px;
+}
+
+#editbtn,
+#editbtn img {
+  background-color: #fff;
+  border: none;
+}
+
+.table_inp {
+
+  width: 20%;
+  border: none;
+  background-color: #42515F;
+  color: white;
+  /* border: 2px solid red; */
+}
+
+.table_val_name {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  /* font-size: 10px; */
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  background-color: white;
+}
+
+.span_name {
+  /* border: 2px solid black; */
+  margin-left: 8px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+input[type=text] {
+  height: 37px;
+  width: 45px;
+  border-radius: 40%;
+  padding: 10px;
+  border: none;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.input-with-image {
+  background: url('../Assets/search.svg') no-repeat left center !important;
+  background-color: white !important;
+  background-size: 5px 5px; /* Adjust size as needed */
+  padding-left: 30px; /* Adjust padding to make space for the image */
+  justify-content: center;
+  align-items: center;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  border-radius: 3%;
+  width: 100%;
+}

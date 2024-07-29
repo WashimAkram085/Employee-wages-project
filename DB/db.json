@@ -1,0 +1,60 @@
+{
+    "Employee": [
+        {
+            "url": "Ellipse -1.png",
+            "name": "Harry Potter Avenger",
+            "gender": "Male",
+            "department": "Tech",
+            "salary": "₹ 10,000",
+            "startDate": "03-07-2024"
+        },
+        {
+            "url": "Ellipse -2.png",
+            "name": "Harry Potter Avenger",
+            "gender": "Male",
+            "department": "Tech",
+            "salary": "₹ 20,000",
+            "startDate": "03-07-2023"
+        },
+        {
+            "url": "Ellipse -3.png",
+            "name": "Harry Potter Avenger",
+            "gender": "Male",
+            "department": "Tech",
+            "salary": "₹ 15,000",
+            "startDate": "03-07-2022"
+        },
+        {
+            "url": "Ellipse -3.png",
+            "name": "Harry Potter Avenger",
+            "gender": "Male",
+            "department": "Tech",
+            "salary": "₹ 15,000",
+            "startDate": "03-07-2022"
+        },
+        {
+            "url": "Ellipse -3.png",
+            "name": "Harry Potter Avenger",
+            "gender": "Male",
+            "department": "Tech",
+            "salary": "₹ 15,000",
+            "startDate": "03-07-2022"
+        },
+        {
+            "url": "Ellipse -3.png",
+            "name": "Harry Potter Avenger",
+            "gender": "Male",
+            "department": "Tech HR",
+            "salary": "₹ 15,000",
+            "startDate": "03-07-2022"
+        },
+        {
+            "url": "Ellipse -3.png",
+            "name": "Harry Potter Avenger",
+            "gender": "Male",
+            "department": "Tech",
+            "salary": "₹ 15,000",
+            "startDate": "03-07-2022"
+        }
+    ]
+}

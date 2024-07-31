@@ -2,7 +2,7 @@ $(function (e) {
     // alert("hi")
     getEmployeeDetails();
 });
- 
+
 function getEmployeeDetails() {
     // alert("hello");
     $.ajax({
@@ -26,7 +26,32 @@ function getEmployeeDetails() {
             }
         },
         error: function (err) {
- 
+
         }
     })
 }
+
+function SearchBar() {
+    var search = document.getElementById("searchInput").value;
+    search = search.toLowerCase();
+
+    var table, tr, td, txtvalue, index;
+
+    tr = document.getElementsByTagName("tr");
+    // it takes all tr including heading... heading in tr[0]. so we started the loop from 1
+
+    for (var i = 1; i < tr.length; i++) {
+        td = tr[i].children;
+        let tr_has = false;
+        for (var j = 0; j < td.length; j++) {
+            var newtd = td[j];
+            if (newtd) {
+                txtvalue = newtd.innerText;
+                if (txtvalue.toLowerCase().includes(search)){
+                    tr_has = true;
+                }
+            }
+            tr[i].style.display = (tr_has) ? "" : "none";
+        }
+    }
+};

@@ -26,3 +26,60 @@ for (let i = currentYear; i >= 1900; i--) {
     option.textContent = i;
     yearSelect.appendChild(option);
 }
+
+
+// form data submit
+function submitbtn() {
+    //photo
+    let profileimg = document.querySelector('input[name="profile-image"]:checked').value;
+    // if (profileimg) {
+    //     console.log(profileimg.value);
+    // } else {
+    //     console.log("no img selected");
+    // }
+
+    //name
+    let fname = document.querySelector("#inputName").value;
+    // console.log(fname);
+
+    //Gender
+    let gender = document.querySelector('input[name="gender"]:checked').value;
+    // console.log(gender);
+
+    //Department
+    let dept = document.querySelector('input[name="dept"]:checked').value;
+    // console.log(dept);
+
+    //Salary
+    let salary = document.querySelector('#inputState').value;
+    // console.log(salary);
+
+    //Start Date
+    let date = $('#inputDay').val() + '/' + $('#inputMonth').val() + '/' + $('#inputYear').val();
+    // console.log(date);
+
+    //user
+    const user = {
+        url: profileimg,
+        name: fname,
+        gender: gender,
+        department: dept,
+        salary: salary,
+        startDate: date
+
+    }
+
+    $.ajax({
+        url: 'http://localhost:3000/Employee',
+        method: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify(user),
+        success: function (data) {
+            console.log('User added:', data);
+            window.opener.location.reload();
+        },
+        error: function (error) {
+            console.error('Error:', error);
+        }
+    });
+}

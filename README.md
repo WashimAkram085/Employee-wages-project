@@ -13,10 +13,11 @@
 ## code file structure
 ![image](https://github.com/user-attachments/assets/39a47085-1b19-4118-9f60-62e90915f5eb)
 
+## Submit button confirmation popup added
+![image](https://github.com/user-attachments/assets/38c14a6a-16c5-47d2-a230-9cf18fabdb82)
+
+
 ## future work
-1. Function of Reset and Cancel button.
-2. A pop of confirmation before submit.
-3. Implement multiple dept option.
-4. Form Validation
-5. If we click on logo then page need to reload.
-6. If we click on employee details then table need to reload.
+1. Form Validation
+2. If we click on logo then page need to reload.
+3. If we click on employee details then table need to reload.

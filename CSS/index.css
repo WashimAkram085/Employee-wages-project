@@ -119,12 +119,12 @@ th {
 td {
   border-bottom: 1px rgb(250, 246, 246);
   padding: 10px;
+  padding: 10px;
   border: rgb(250, 246, 246);
   background-color: white;
 }
 
 tr {
-  text-align: center;
   padding: 10px;
   margin: 50px;
   border-bottom: 2pt solid rgb(250, 246, 246);
@@ -217,4 +217,7 @@ input[type=text] {
 input[type=text]:focus {
   border-radius: 3%;
   width: 100%;
+}
+.pfimg{
+  width: 2em;
 }

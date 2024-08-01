@@ -14,12 +14,13 @@ function getEmployeeDetails() {
             for (var i = 0; i < res.length; i++) {
                 let data = `
             <tr>
-                <td class="table_val_name"><img src="../Assets/${res[i].url}" height="30px" width="30px" style="border-radius :15px"><span class="span_name">${res[i].name}</span></td>
+                <td class="table_val_name"><img src="../Assets/${res[i].url}" height="32px" width="30px" style="border-radius :15px"></td>
+                <td><span class="span_name">${res[i].name}</span></td>
                 <td class="table_val">${res[i].gender}</td>
                 <td class="table_val"><span style="background-color: #E9FEA5;">${res[i].department}</span></td>
                 <td class="table_val">${res[i].salary}</td>
                 <td class="table_val">${res[i].startDate}</td>
-                <td class="table_val"><button style="background-color: white; border:none" id="delete"><img style="background-color: white" src="../Assets/delete-black-18dp.svg"></button>&nbsp;&nbsp;&nbsp;&nbsp;<button style="background-color: white; border:none" id="edit"><img style="background-color: white" src="../Assets/create-black-18dp.svg"></button></td>
+                <td class="table_val"><button style="background-color: white; border:none" id="delete" onclick="deleterow('${res[i].id}')"><img style="background-color: white" src="../Assets/delete-black-18dp.svg"></button>&nbsp;&nbsp;&nbsp;&nbsp;<button style="background-color: white; border:none" id="edit" onclick="edit()"><img style="background-color: white" src="../Assets/create-black-18dp.svg"></button></td>
             </tr>
                 `;
                 $("#tbl-details").append(data);
@@ -47,7 +48,7 @@ function SearchBar() {
             var newtd = td[j];
             if (newtd) {
                 txtvalue = newtd.innerText;
-                if (txtvalue.toLowerCase().includes(search)){
+                if (txtvalue.toLowerCase().includes(search)) {
                     tr_has = true;
                 }
             }
@@ -55,3 +56,22 @@ function SearchBar() {
         }
     }
 };
+
+//delete row data
+function deleterow(id) {
+    $.ajax({
+        url: `http://localhost:3000/Employee/` + id,
+        type: 'DELETE',
+        success: function (data) {
+            console.log(data.message);
+            location.reload(); // Reload the table data
+        },
+        error: function () {
+        }
+    });
+}
+
+//edit
+function edit() {
+
+}

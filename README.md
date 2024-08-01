@@ -19,5 +19,4 @@
 
 ## future work
 1. Form Validation
-2. If we click on logo then page need to reload.
-3. If we click on employee details then table need to reload.
+2. Edit data in table.

@@ -10,13 +10,13 @@
       "id": "3161"
     },
     {
-      "id": "300f",
       "url": "Ellipse -7.png",
-      "name": "Sneha Kumar",
-      "gender": "Female",
+      "name": "Sneha Kumari",
+      "gender": "Male",
       "department": "HR",
       "salary": "₹ 50,000",
-      "startDate": "2/1/2021"
+      "startDate": "2/1/2021",
+      "id": "300f"
     },
     {
       "id": "a980",
@@ -35,6 +35,15 @@
       "salary": "₹ 50,000",
       "startDate": "1/1/2022",
       "id": "b585"
+    },
+    {
+      "id": "87df",
+      "url": "Ellipse -8.png",
+      "name": "Washim Akram",
+      "gender": "Male",
+      "department": "Er",
+      "salary": "₹ 50,000",
+      "startDate": "12/3/2021"
     }
   ]
 }

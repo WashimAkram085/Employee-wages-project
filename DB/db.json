@@ -28,22 +28,13 @@
       "startDate": "17/4/2012"
     },
     {
-      "id": "f9d0",
-      "url": "Ellipse -1.png",
-      "name": "Sindhu Gupta",
-      "gender": "Female",
-      "department": "Sales",
-      "salary": "₹ 30,000",
-      "startDate": "13/3/2023"
-    },
-    {
-      "id": "b585",
       "url": "Ellipse -3.png",
-      "name": "Abhishek Kumar",
+      "name": "Abhishek Kumar Gupta",
       "gender": "Male",
-      "department": "Others",
+      "department": "HR",
       "salary": "₹ 50,000",
-      "startDate": "1/1/2022"
+      "startDate": "1/1/2022",
+      "id": "b585"
     }
   ]
 }

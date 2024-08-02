@@ -55,9 +55,7 @@ function submitbtn() {
         //Start Date
         let date = $('#inputDay').val() + '/' + $('#inputMonth').val() + '/' + $('#inputYear').val();
         // console.log(date);
-
         //user
-
         const user = {
             url: profileimg,
             name: fname,

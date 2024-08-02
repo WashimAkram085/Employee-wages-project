@@ -59,16 +59,20 @@ function SearchBar() {
 
 //delete row data
 function deleterow(id) {
-    $.ajax({
-        url: `http://localhost:3000/Employee/` + id,
-        type: 'DELETE',
-        success: function (data) {
-            console.log(data.message);
-            location.reload(); // Reload the table data
-        },
-        error: function () {
-        }
-    });
+    let dltconfirm = confirm("Are you sure you want to delete this record?");
+    if (dltconfirm == 1) {
+        $.ajax({
+            url: `http://localhost:3000/Employee/` + id,
+            type: 'DELETE',
+            success: function (data) {
+                console.log(data.message);
+                location.reload(); // Reload the table data
+            },
+            error: function () {
+            }
+        });
+    }
+    
 }
 
 //edit

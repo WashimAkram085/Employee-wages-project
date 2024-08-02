@@ -1,13 +1,13 @@
 {
   "Employee": [
     {
-      "id": "3161",
       "url": "Ellipse -8.png",
-      "name": "Rohith Roy",
+      "name": "Rohith Royy",
       "gender": "Male",
-      "department": "Others",
+      "department": "HR",
       "salary": "₹ 50,000",
-      "startDate": "19/9/2017"
+      "startDate": "19/9/2017",
+      "id": "3161"
     },
     {
       "id": "300f",
@@ -17,15 +17,6 @@
       "department": "HR",
       "salary": "₹ 50,000",
       "startDate": "2/1/2021"
-    },
-    {
-      "id": "78d4",
-      "url": "Ellipse -8.png",
-      "name": "Washim Akram",
-      "gender": "Male",
-      "department": "Er",
-      "salary": "₹ 50,000",
-      "startDate": "1/7/2024"
     },
     {
       "id": "a980",

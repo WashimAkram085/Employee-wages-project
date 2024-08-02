@@ -67,30 +67,51 @@ function submitbtn() {
             startDate: date
 
         }
+        if (localStorage.getItem('editUser') !== null) {
+            const user1 = JSON.parse(localStorage.getItem('editUser'));
+            id = user1.id;
+            $.ajax({
+                url: 'http://localhost:3000/Employee/' + id,
+                type: 'PUT',
+                contentType: 'application/json',
+                data: JSON.stringify(user),
+                success: function (res) {
+                    console.log(res);
+                    alert('Data updated successfully');
+                    window.opener.location.reload();
+                    window.location.replace("index.html");
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            });
+            localStorage.removeItem('editUser');
+        } else {
 
-        $.ajax({
-            url: 'http://localhost:3000/Employee',
-            method: 'POST',
-            contentType: 'application/json',
-            data: JSON.stringify(user),
-            success: function (data) {
-                console.log('User added:', data);
-                window.opener.location.reload();
-            },
-            error: function (error) {
-                console.error('Error:', error);
-            }
-        });
+            $.ajax({
+                url: 'http://localhost:3000/Employee',
+                method: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(user),
+                success: function (data) {
+                    console.log('User added:', data);
+                    window.opener.location.reload();
+                },
+                error: function (error) {
+                    console.error('Error:', error);
+                }
+            });
+        }
         window.location.replace("index.html");
     };
 }
 
 //Cancel Button
-function cancelbtn(){
+function cancelbtn() {
     window.location.replace("index.html");
 }
 
 //reset button
-function resetbtn(){
+function resetbtn() {
     window.location.replace("adduser.html");
 }
